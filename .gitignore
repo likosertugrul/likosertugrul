@@ -1,0 +1,7 @@
+# source photo for the ASCII portrait — stays local, the art is baked into the SVGs
+*.jpeg
+*.jpg
+*.png
+
+.claude/
+.DS_Store
