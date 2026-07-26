@@ -42,36 +42,81 @@ const PROFILE = {
   },
 };
 
-/* ASCII portrait, generated from the source photo (60 cols x 24 rows). */
+/* Portrait, generated from the source photo (see USAGE.md): 60 x 30 cells.
+   The background is flood-removed and each cell carries its own tone, which is
+   what makes it read as a face instead of a silhouette. */
 const ART = `
+                                                            
+                                                            
+                     ▓▒▒▒▒▒▒▒▒▓▓                            
+               ▓▓▒▒▒▒░░░░░▒░░░░░▒▒▒                         
+            ▓▒░░░░░░░░░░░░░░░░░░░░▒▒▓█▓                     
+           ▒░░░░░░░░░░░░░░░░░░░░░▒▒░░░▒▒▓                   
+         ▓░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒                  
+       ▒▓▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▓█                 
+       ▒▒░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░▒▒▒▒                 
+      ▓░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░░▓                
+      ░░░░░░░░░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░▒               
+      ▒▒▒▒▒░░░░░▒░░░░░░░░░░░░░░░░░░░░░░░░░░░░               
+      ▒▒▒▒░░░░░░▒▒░░░░░░░░░░░░░░░░░░░░░░░░░░░               
+       ▒▒▒░░░░░▒▒░░░░░▒▒░░░░░░░░░░░░░░░░░░░░                
+       ▒░░▒░░░░▒▓▒▒▒▒▒▓▓▓▒░░░░░░░░░░░░░░░░▒█                
+       ▒░░░░░░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒▒▒░░░░░░░██                
+        ░░░░░▒▒░░░░▒▒▒▒▓▒▒▒▒░▒▒▒▒▒█▓░▒░░░░▓█                
+        ██▓▒░░█▒▒░░░░░▒█▓▒░░░░░░░▒██▓▒▒░░░▒▒                
+         █▒▒░▒██▒▒░░░▒████▓▒░░▒▒▓█████░░░░░▒█               
+         █▓▒░░█████▓▓██▓▓▓▓▓█▓▓██████▓▒░░░▒██               
+          █▓░░▒█    ██▒░░░░░░░░▒▓▓▓██▒█░░░░██               
+          █▓▓░█▓     ▒▒▒▒▒▒▒▒▓▓▓████▓▒░░░░▒██               
+           ▓▒▒▒░██     █▓▓▓███▓▓██▓▓█▒░░░░░▒▓██             
+           ▓▒░░░░██       ▓███▓▓▓▓▓█▓▒░░░░░░░░▒██           
+           ▓▒░░░░░▒█      ████▓▒▒▓██▓░░░░░░░░░░░▒▒▒         
+            ▓▒▒▓▒░░▓█     ▒▒▒▒▒▒▓██▓▒░░░░░░░░░░░░░░░░▓      
+            ███▒▓▒░░██    ▒▒▒▓▓▓▓██▓░░░░░░░░░░░░░░░░░░▒▒    
+            ▒▒▒▒▒░░░▓█    ▓▓▓▓▓▓▓▓▓▒░░░░░░░░░░░░░░░░░░░▒░▒██
+           ██▒▒░░░░░░██     ▓▓▓▓▓▓▒░░░░░░░░░░░░░░░░░░░░░░░▒▓
+          ▒▒▒▒▒░▒░░░░▒█       █▓▓▓▓░░░░░░░░░░░░░░░░░░░░░░░░▒
+`.replace(/^\n/, '').replace(/\n$/, '').split('\n');
 
-
-                ~   =+8#@@@##@%#88+
-              -8@@@@@@@@@@@@@@@@@@%#*  ~=
-           -*%@@@@@@@@@@@@@@%%@@@@8#@@@8+~
-           *%@%@@@@#@@@@@@@%%8%@@@@@@@@%*+=
-       -=*8*#@@@@@@%#@%@@@@@@8#@@@@@##%#+=+~
-       =*@@@@@@@@@8%%@%@%88@@%%@@@@8*#@@@@%#
-       -@@@@%@%@@8+*@@@@@@@@@@@#%@%8@*@@@@@@@
-       ~*8*~#@@@@8*%@@@@@@@@@@@@@@@@@##@@@@#@#
-       ~=+*+#%%@@+*%@@@@8%8@@@@@@@@@@##@@@@@#
-        *#@88##@8 ~=++*~--=@@@@@@%@@@@@%%@@*
-         #@@@@@@+**~===8==+#*@**++-+@@@@@@8
-          ~=*@@~#@@@@@@% -+@%@##%@=  +=%@@#~
-            =#@+ *#@@@@=   *@@@@@8     @@@@%+
-            ~@@~    -=     -   ~      -8@@@
-~~           +@@     - ~%@#@@##%*     **@@#~
- -~-~~~-     ~*~    ~++=====~         8@@@@=
--------      =%@@@        ~           %@@@@@@%+
-             +@@@@@#           -~~-   @@@@@@@@@@#~~
-              -=-~@@%   -=+**+*=~   -%@@@@@@@@@@@@@@@+
- ~~   ~~      ~  ~=%@=    =+=~-     +@@@@@@@@@@@@@@@@@%++
- =*= -==~   ~ +#*@*@@@            -=%@@@@@@@@@@@@@@@@@@@@%~
-  -         8~+8@%#@@@@           -=@@@@@@@@@@@@@@@@@@@@@@@#
+/* per-cell tone, 0 = nothing, 1..8 = dim..full */
+const LEV = `
+000000000000000000000000000000000000000000000000000000000000
+000000000000000000000000000000000000000000000000000000000000
+000000000000000000000653334434760000000000000000000000000000
+000000000000000665433332123322233340000000000000000000000000
+000000000000732222322221111111122233676000000000000000000000
+000000000003322222211111111221122333223460000000000000000000
+000000000523322112211111122221111222122444000000000000000000
+000000056432111122211111111122111112223456800000000000000000
+000000043331112112221111111132111112322333400000000000000000
+000000622111212122221111321112111123211222260000000000000000
+000000322122212234311111221111221221221122234000000000000000
+000000433432111142222112111111111111221121332000000000000000
+000000543422211243211112222111111111232121323000000000000000
+000000043431221342322234221121111111211122220000000000000000
+000000032233221575443466652111112211112211380000000000000000
+000000042111113444534435432212233541111112880000000000000000
+000000003222143112334346554535544587232112780000000000000000
+000000008864227332111157651111111588655112330000000000000000
+000000000853247843211388886322346888882121258000000000000000
+000000000764128888876877666687588878865112487000000000000000
+000000000086314800007853232233237778838112388000000000000000
+000000000076638500000433554557777778741111388000000000000000
+000000000006445388000008666888777776841111147880000000000000
+000000000007321118800000006778776667631111111138800000000000
+000000000006312111480000008887655677711111111111345000000000
+000000000000644531278000005444456786311111111111121126000000
+000000000000788564118800004455677785111111111111121122450000
+000000000000334533115800006667777764111111111111111111333588
+000000000008843133111880000076666653111111111111111111122357
+000000000045433232111480000000776661111111111111111111111123
 `.replace(/^\n/, '').replace(/\n$/, '').split('\n');
 
 const COLS = 60;
 const ROWS = ART.length;
+/* fill-opacity per tone level — this is what carries the photo's tonality;
+   the glyph alone cannot, every character reads as roughly the same grey */
+const TONE = [0, .16, .28, .4, .52, .64, .76, .88, 1];
 
 /* ------------------------------------------------------------------ *
  * 2. PALETTES
@@ -109,6 +154,7 @@ const THEMES = {
     pillStroke: 'rgba(255,255,255,.12)',
     scanOp: 0.13,
     gridOp: 0.05,
+    toneMin: 0.16,
   },
   light: {
     name: 'light',
@@ -142,6 +188,7 @@ const THEMES = {
     pillStroke: 'rgba(15,23,42,.1)',
     scanOp: 0.07,
     gridOp: 0.045,
+    toneMin: 0.38,
   },
 };
 
@@ -154,7 +201,7 @@ const PAD = 26;
 const L = { x: PAD, y: PAD, w: 440, h: H - PAD * 2, r: 20 };            // left panel
 const Rt = { x: L.x + L.w + 16, y: PAD, w: W - (L.x + L.w + 16) - PAD, h: H - PAD * 2, r: 20 };
 
-const ART_W = 392, ART_X = L.x + (L.w - ART_W) / 2, ART_Y0 = 152, ART_LH = 13.07, ART_FS = 12.6;
+const ART_W = 392, ART_X = L.x + (L.w - ART_W) / 2, ART_Y0 = 150, ART_LH = 10.9, ART_FS = 11.2;
 const ART_Y1 = ART_Y0 + (ROWS - 1) * ART_LH;
 
 const CX = Rt.x + 30;            // content left edge of terminal
@@ -294,16 +341,9 @@ function render(t) {
   <!-- ASCII gradient: shifts continuously across the portrait -->
   <linearGradient id="asciiGrad" gradientUnits="userSpaceOnUse"
       x1="${ART_X}" y1="${ART_Y0 - 20}" x2="${ART_X + ART_W}" y2="${ART_Y1}">
-    <stop offset="0" stop-color="${t.ascii1}">
-      <animate attributeName="stop-color" values="${t.ascii1};${t.ascii2};${t.ascii3};${t.ascii1}" dur="9s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset=".5" stop-color="${t.ascii3}">
-      <animate attributeName="stop-color" values="${t.ascii3};${t.ascii1};${t.ascii2};${t.ascii3}" dur="9s" repeatCount="indefinite"/>
-      <animate attributeName="offset" values=".5;.72;.28;.5" dur="9s" repeatCount="indefinite"/>
-    </stop>
-    <stop offset="1" stop-color="${t.ascii2}">
-      <animate attributeName="stop-color" values="${t.ascii2};${t.ascii3};${t.ascii1};${t.ascii2}" dur="9s" repeatCount="indefinite"/>
-    </stop>
+    <stop offset="0" stop-color="${t.ascii1}"/>
+    <stop offset=".52" stop-color="${t.ascii3}"/>
+    <stop offset="1" stop-color="${t.ascii2}"/>
   </linearGradient>
 
   <linearGradient id="asciiGlow" gradientUnits="userSpaceOnUse"
@@ -319,7 +359,6 @@ function render(t) {
     <stop offset=".5" stop-color="${t.text}" stop-opacity=".9"/>
     <stop offset=".58" stop-color="${t.a1}" stop-opacity=".85"/>
     <stop offset="1" stop-color="${t.a1}" stop-opacity="0"/>
-    <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="2020 0" dur="7s" repeatCount="indefinite"/>
   </linearGradient>
 
   <linearGradient id="glassSweep" x1="0" y1="0" x2="1" y2="0">
@@ -379,7 +418,7 @@ function render(t) {
   /* per-line typing clips for the ASCII art */
   ART.forEach((_, i) => {
     const y = ART_Y0 + i * ART_LH;
-    defs.push(`  <clipPath id="ln${i}"><rect x="${ART_X}" y="${n(y - ART_FS)}" width="${ART_W}" height="${n(ART_LH)}">` +
+    defs.push(`  <clipPath id="ln${i}"><rect x="${ART_X}" y="${n(y - ART_FS * 0.86)}" width="${ART_W}" height="${n(ART_LH + 2)}">` +
       wipeIn(0.35 + i * 0.12, 0.34, ART_W) + `</rect></clipPath>`);
   });
 
@@ -389,11 +428,22 @@ function render(t) {
      animated gradient and no filter at all. Every glyph gets an explicit x so
      the grid is exact in any monospace font, and spaces are NBSP so no
      whitespace collapsing can shift a column. */
-  const XS = Array.from({ length: COLS }, (_, c) => n(ART_X + c * (ART_W / COLS))).join(' ');
   const artLines = [`  <g id="artLines" class="m" font-size="${ART_FS}" xml:space="preserve">`];
-  ART.forEach((line, i) => {
-    const body = esc(line.padEnd(COLS, ' ')).replace(/ /g, '&#160;');
-    artLines.push(`   <text x="${XS}" y="${n(ART_Y0 + i * ART_LH)}" clip-path="url(#ln${i})">${body}</text>`);
+  ART.forEach((line, r) => {
+    const lv = (LEV[r] || '').padEnd(COLS, '0');
+    const y = n(ART_Y0 + r * ART_LH);
+    for (let L = 1; L < TONE.length; L++) {
+      const xs = [], gs = [];
+      for (let c = 0; c < COLS; c++) {
+        const ch = line[c] || ' ';
+        if (lv[c] !== String(L) || ch === ' ') continue;
+        xs.push(n(ART_X + c * (ART_W / COLS)));
+        gs.push(ch);
+      }
+      if (!xs.length) continue;
+      const op = n(t.toneMin + (1 - t.toneMin) * (L - 1) / (TONE.length - 2));
+      artLines.push(`   <text x="${xs.join(' ')}" y="${y}" fill-opacity="${op}" clip-path="url(#ln${r})">${esc(gs.join(''))}</text>`);
+    }
   });
   artLines.push('  </g>');
   defs.push(artLines.join('\n'));
@@ -441,20 +491,15 @@ function render(t) {
   /* floating radial glows */
   p(`  <g opacity=".95">
     <ellipse cx="210" cy="120" rx="260" ry="190" fill="url(#blobA)">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 70 46; -34 62; 0 0" dur="26s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
     </ellipse>
     <ellipse cx="880" cy="90" rx="300" ry="200" fill="url(#blobB)">
-      <animateTransform attributeName="transform" type="translate" values="0 0; -80 60; 44 30; 0 0" dur="31s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
-    </ellipse>
-    <ellipse cx="700" cy="580" rx="290" ry="180" fill="url(#blobC)">
-      <animateTransform attributeName="transform" type="translate" values="0 0; 90 -40; -60 -18; 0 0" dur="35s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
     </ellipse>
   </g>`);
 
   /* particles */
   const rnd = mulberry32(20260725);
   const parts = [];
-  for (let i = 0; i < 12; i++) {
+  for (let i = 0; i < 8; i++) {
     const x = 40 + rnd() * (W - 80);
     const y = 40 + rnd() * (H - 80);
     const r = 0.8 + rnd() * 1.6;
@@ -469,10 +514,6 @@ function render(t) {
   }
   p(parts.join('\n'));
 
-  /* moving scanline over the whole card */
-  p(`  <rect x="0" y="-140" width="${W}" height="140" fill="url(#scan)" opacity="${t.scanOp}">
-    <animate attributeName="y" values="-140;${H}" dur="7s" repeatCount="indefinite"/>
-  </rect>`);
 
   p(`  <rect width="${W}" height="${H}" fill="url(#vignette)"/>`);
   p(`</g>`);
@@ -482,9 +523,6 @@ function render(t) {
   p(`<g clip-path="url(#leftClip)">`);
   p(`  <rect x="${L.x}" y="${L.y}" width="${L.w}" height="90" fill="url(#glassTop)"/>`);
   /* glass sweep */
-  p(`  <g opacity=".9"><rect x="${L.x - 240}" y="${L.y - 60}" width="150" height="${L.h + 120}" fill="url(#glassSweep)" transform="skewX(-18)">
-    <animate attributeName="x" values="${L.x - 260};${L.x + L.w + 190}" dur="11s" repeatCount="indefinite"/>
-  </rect></g>`);
 
   /* left header */
   p(`  <g class="m" font-size="11.5" letter-spacing="1.6">
@@ -498,11 +536,11 @@ function render(t) {
 
   /* ASCII art */
   p(`  <g clip-path="url(#artClip)">`);
+  p(`   <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGlow)" opacity=".5" filter="url(#fGlow)"/>`);
   p(`   <g>
-     <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>`);
+     <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>`);
   /* every glyph gets an explicit x so the grid is exact in any monospace font,
      and spaces are NBSP so no whitespace collapsing can shift a column */
-  p(`    <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGlow)" opacity=".55" filter="url(#fGlow)"/>`);
   p(`    <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGrad)"/>`);
 
   /* typing cursor that follows the reveal */
@@ -542,9 +580,6 @@ ${curAnims}
   p(`<g filter="url(#fShadow)"><rect x="${Rt.x}" y="${Rt.y}" width="${Rt.w}" height="${Rt.h}" rx="${Rt.r}" fill="url(#panelGrad)" fill-opacity="${t.panelOp}"/></g>`);
   p(`<g clip-path="url(#rightClip)">`);
   p(`  <rect x="${Rt.x}" y="${Rt.y}" width="${Rt.w}" height="120" fill="url(#glassTop)"/>`);
-  p(`  <g opacity=".9"><rect x="${Rt.x - 300}" y="${Rt.y - 60}" width="190" height="${Rt.h + 120}" fill="url(#glassSweep)" transform="skewX(-18)">
-    <animate attributeName="x" values="${Rt.x - 320};${Rt.x + Rt.w + 240}" dur="13s" begin="2s" repeatCount="indefinite"/>
-  </rect></g>`);
 
   /* title bar */
   p(`  <path d="M${Rt.x} ${Rt.y + 40}H${Rt.x + Rt.w}" stroke="${t.borderStrong}" stroke-width="1" stroke-opacity=".45"/>`);
@@ -671,7 +706,7 @@ ${curAnims}
     <rect width="${W}" height="${H}" fill="url(#noisePat)"/>
   </g>`);
 
-  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" `
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" `
     + `width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" fill="none" role="img" `
     + `aria-label="${esc(PROFILE.name)} — ${esc(PROFILE.roles.join(', '))}">\n`
     + `<title>${esc(PROFILE.name)} · GitHub profile banner (${t.name})</title>\n`
@@ -689,7 +724,7 @@ function renderButton(s) {
   const P = s.id + '-';   // unique ids so several buttons can be inlined side by side
   const fs_ = 13, bw = Math.round(52 + s.label.length * cw(fs_) + 20), bh = 44;
   const k = 26 / s.scale * 0.62;
-  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${bw}" height="${bh}" viewBox="0 0 ${bw} ${bh}" fill="none" role="img" aria-label="${esc(s.label)}">
+  return `<?xml version="1.0" encoding="UTF-8"?>\n<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${bw}" height="${bh}" viewBox="0 0 ${bw} ${bh}" fill="none" role="img" aria-label="${esc(s.label)}">
 <title>${esc(s.label)}</title>
 <defs>
   <linearGradient id="${P}bs" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="${bw}" y2="${bh}">

@@ -5,3 +5,7 @@
 
 .claude/
 .DS_Store
+
+# local preview / portrait variants
+_*.html
+pv[0-9].svg
