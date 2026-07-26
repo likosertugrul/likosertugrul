@@ -42,36 +42,35 @@ const PROFILE = {
   },
 };
 
-/* ASCII portrait, generated from the source photo (50 cols x 26 rows). */
+/* ASCII portrait, generated from the source photo (60 cols x 24 rows). */
 const ART = `
-                   .-::::~~---
-             =:~=**#%@@@#@@@%#*=.  .-
-          -~%@@@%@@@@@@@@@@@@@%#*~~~=-
-       .:+%%@@@@@@@@@@@@@%@@@@%%@@@#=::.
-     .-:+%%@@@@@%@@@@@@@@##@@@@@%@@%*=:
-    -~+#%#@@@@@@@@@%@@@@@%#@@@@@##@%#**~
-     ~%@@@@%@@@*#%@@@@#%@@@%@@@##%@@@@@+~
-     =####%@@@#*%@@@@@@@@@@@@@@@@#@@@@@@@
-    .~+*+#@@@@**%@@@@@@%@@@@@@@@@%#@@@%@#
-     -+#**%#@@=+*##%++*#@@@@@@@@@@@@@@@#
-      =%@@@@@+=++***+==*@@@@@#*%@@@@@@+
-       +@@@@#%@@#*+++~=++*#+++=-~%#@@@=
-         :+@%~*@@@@@=.:=@@@@@@~..:~#@@#%:..
-....  ...~*@= .:=*#~. -:~+++~-.. .~@@@%:.....
-..   ....-~@@.   ::-~*##@*+**:-. -==@@#:.. ..
-::::::. .-:=*.. .~==+*====~::--..:#@@@%:.....
-::::-    .:+%@@. ..  -:~:--------:#@@@@@*+-
---.-.     :#@@@@+     .----::~:--~@@@@@@@@@@~~-
-...-.      ~+=+@@+  .:~=====~:-.~#@@@@@@@@@@@@@@+-
-:-.-:-.   .~~~=+@@:   :~=~~:---:=@@@@@@@@@@@@@@@@%
-=:::::-..::~**%*@@@    -:::::::~#@@@@@@@@@@@@@@@@@
-:-.  .. .=~~*%%#@@@+  ..-----:~=@@@@@@@@@@@@@@@@@@
-       -%@#%#%#@@@@@+  --.  .--+@@@@@@@@@@@@@@@@@@
-      ~%@@%#%%%@%*@@#~..     -*@@@@@@@@@@@@@@@@@@@
-   ~@@@@@@%%@@@##+@@@*~:.  -*@@@@@@@@@@@@@@@@@@@@@
+
+
+                ~   =+8#@@@##@%#88+
+              -8@@@@@@@@@@@@@@@@@@%#*  ~=
+           -*%@@@@@@@@@@@@@@%%@@@@8#@@@8+~
+           *%@%@@@@#@@@@@@@%%8%@@@@@@@@%*+=
+       -=*8*#@@@@@@%#@%@@@@@@8#@@@@@##%#+=+~
+       =*@@@@@@@@@8%%@%@%88@@%%@@@@8*#@@@@%#
+       -@@@@%@%@@8+*@@@@@@@@@@@#%@%8@*@@@@@@@
+       ~*8*~#@@@@8*%@@@@@@@@@@@@@@@@@##@@@@#@#
+       ~=+*+#%%@@+*%@@@@8%8@@@@@@@@@@##@@@@@#
+        *#@88##@8 ~=++*~--=@@@@@@%@@@@@%%@@*
+         #@@@@@@+**~===8==+#*@**++-+@@@@@@8
+          ~=*@@~#@@@@@@% -+@%@##%@=  +=%@@#~
+            =#@+ *#@@@@=   *@@@@@8     @@@@%+
+            ~@@~    -=     -   ~      -8@@@
+~~           +@@     - ~%@#@@##%*     **@@#~
+ -~-~~~-     ~*~    ~++=====~         8@@@@=
+-------      =%@@@        ~           %@@@@@@%+
+             +@@@@@#           -~~-   @@@@@@@@@@#~~
+              -=-~@@%   -=+**+*=~   -%@@@@@@@@@@@@@@@+
+ ~~   ~~      ~  ~=%@=    =+=~-     +@@@@@@@@@@@@@@@@@%++
+ =*= -==~   ~ +#*@*@@@            -=%@@@@@@@@@@@@@@@@@@@@%~
+  -         8~+8@%#@@@@           -=@@@@@@@@@@@@@@@@@@@@@@@#
 `.replace(/^\n/, '').replace(/\n$/, '').split('\n');
 
-const COLS = 50;
+const COLS = 60;
 const ROWS = ART.length;
 
 /* ------------------------------------------------------------------ *
@@ -155,7 +154,7 @@ const PAD = 26;
 const L = { x: PAD, y: PAD, w: 440, h: H - PAD * 2, r: 20 };            // left panel
 const Rt = { x: L.x + L.w + 16, y: PAD, w: W - (L.x + L.w + 16) - PAD, h: H - PAD * 2, r: 20 };
 
-const ART_W = 380, ART_X = L.x + (L.w - ART_W) / 2, ART_Y0 = 132, ART_LH = 15.1, ART_FS = 14;
+const ART_W = 392, ART_X = L.x + (L.w - ART_W) / 2, ART_Y0 = 152, ART_LH = 13.07, ART_FS = 12.6;
 const ART_Y1 = ART_Y0 + (ROWS - 1) * ART_LH;
 
 const CX = Rt.x + 30;            // content left edge of terminal
@@ -307,6 +306,13 @@ function render(t) {
     </stop>
   </linearGradient>
 
+  <linearGradient id="asciiGlow" gradientUnits="userSpaceOnUse"
+      x1="${ART_X}" y1="${ART_Y0 - 20}" x2="${ART_X + ART_W}" y2="${ART_Y1}">
+    <stop offset="0" stop-color="${t.ascii1}"/>
+    <stop offset=".5" stop-color="${t.ascii3}"/>
+    <stop offset="1" stop-color="${t.ascii2}"/>
+  </linearGradient>
+
   <linearGradient id="shimmer" gradientUnits="userSpaceOnUse" x1="-420" y1="0" x2="0" y2="610">
     <stop offset="0" stop-color="${t.a2}" stop-opacity="0"/>
     <stop offset=".42" stop-color="${t.a2}" stop-opacity=".85"/>
@@ -342,7 +348,7 @@ function render(t) {
 
   <filter id="fBlobs" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="55"/></filter>
   <filter id="fGlow" x="-70%" y="-70%" width="240%" height="240%">
-    <feGaussianBlur stdDeviation="3.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <filter id="fGlowSm" x="-90%" y="-90%" width="280%" height="280%">
     <feGaussianBlur stdDeviation="1.7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -373,9 +379,24 @@ function render(t) {
   /* per-line typing clips for the ASCII art */
   ART.forEach((_, i) => {
     const y = ART_Y0 + i * ART_LH;
-    defs.push(`  <clipPath id="ln${i}"><rect x="${ART_X}" y="${n(y - 12)}" width="${ART_W}" height="15">` +
+    defs.push(`  <clipPath id="ln${i}"><rect x="${ART_X}" y="${n(y - ART_FS)}" width="${ART_W}" height="${n(ART_LH)}">` +
       wipeIn(0.35 + i * 0.12, 0.34, ART_W) + `</rect></clipPath>`);
   });
+
+  /* The glyphs live once in <defs> and are drawn twice. The glow copy takes a
+     *static* gradient so WebKit can cache the blurred layer instead of
+     re-running the filter every frame; the sharp copy on top carries the
+     animated gradient and no filter at all. Every glyph gets an explicit x so
+     the grid is exact in any monospace font, and spaces are NBSP so no
+     whitespace collapsing can shift a column. */
+  const XS = Array.from({ length: COLS }, (_, c) => n(ART_X + c * (ART_W / COLS))).join(' ');
+  const artLines = [`  <g id="artLines" class="m" font-size="${ART_FS}" xml:space="preserve">`];
+  ART.forEach((line, i) => {
+    const body = esc(line.padEnd(COLS, ' ')).replace(/ /g, '&#160;');
+    artLines.push(`   <text x="${XS}" y="${n(ART_Y0 + i * ART_LH)}" clip-path="url(#ln${i})">${body}</text>`);
+  });
+  artLines.push('  </g>');
+  defs.push(artLines.join('\n'));
 
   /* role typewriter clips */
   const roleFS = 20, roleCW = cw(roleFS), ROLE_X = CX, ROLE_Y = 182;
@@ -421,11 +442,9 @@ function render(t) {
   p(`  <g opacity=".95">
     <ellipse cx="210" cy="120" rx="260" ry="190" fill="url(#blobA)">
       <animateTransform attributeName="transform" type="translate" values="0 0; 70 46; -34 62; 0 0" dur="26s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
-      <animate attributeName="rx" values="260;300;260" dur="17s" repeatCount="indefinite"/>
     </ellipse>
     <ellipse cx="880" cy="90" rx="300" ry="200" fill="url(#blobB)">
       <animateTransform attributeName="transform" type="translate" values="0 0; -80 60; 44 30; 0 0" dur="31s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
-      <animate attributeName="ry" values="200;236;200" dur="19s" repeatCount="indefinite"/>
     </ellipse>
     <ellipse cx="700" cy="580" rx="290" ry="180" fill="url(#blobC)">
       <animateTransform attributeName="transform" type="translate" values="0 0; 90 -40; -60 -18; 0 0" dur="35s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1;.45 0 .55 1"/>
@@ -435,7 +454,7 @@ function render(t) {
   /* particles */
   const rnd = mulberry32(20260725);
   const parts = [];
-  for (let i = 0; i < 18; i++) {
+  for (let i = 0; i < 12; i++) {
     const x = 40 + rnd() * (W - 80);
     const y = 40 + rnd() * (H - 80);
     const r = 0.8 + rnd() * 1.6;
@@ -483,14 +502,8 @@ function render(t) {
      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>`);
   /* every glyph gets an explicit x so the grid is exact in any monospace font,
      and spaces are NBSP so no whitespace collapsing can shift a column */
-  const XS = Array.from({ length: COLS }, (_, c) => n(ART_X + c * (ART_W / COLS))).join(' ');
-  p(`    <use href="#artLines" xlink:href="#artLines" opacity=".5" filter="url(#fGlow)"/>`);
-  p(`    <g id="artLines" fill="url(#asciiGrad)" class="m" font-size="${ART_FS}" xml:space="preserve">`);
-  ART.forEach((line, i) => {
-    const body = esc(line.padEnd(COLS, ' ')).replace(/ /g, '&#160;');
-    p(`     <text x="${XS}" y="${n(ART_Y0 + i * ART_LH)}" clip-path="url(#ln${i})">${body}</text>`);
-  });
-  p(`    </g>`);
+  p(`    <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGlow)" opacity=".55" filter="url(#fGlow)"/>`);
+  p(`    <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGrad)"/>`);
 
   /* typing cursor that follows the reveal */
   const curAnims = ART.map((_, i) => {
@@ -649,15 +662,13 @@ ${curAnims}
   /* =================== CARD BORDER + SHIMMER =================== */
   p(`<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="${R}" fill="none" stroke="${t.borderStrong}" stroke-width="1"/>`);
   p(`<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="${R}" fill="none" stroke="url(#shimmer)" stroke-width="1.4" opacity=".9"/>`);
-  p(`<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="${R}" fill="none" stroke="${t.a2}" stroke-width="1.6" stroke-opacity=".9" stroke-linecap="round" stroke-dasharray="180 3400" filter="url(#fGlowSm)">
+  p(`<rect x="1" y="1" width="${W - 2}" height="${H - 2}" rx="${R}" fill="none" stroke="${t.a2}" stroke-width="1.6" stroke-opacity=".9" stroke-linecap="round" stroke-dasharray="180 3400">
     <animate attributeName="stroke-dashoffset" values="0;-3580" dur="9s" repeatCount="indefinite"/>
   </rect>`);
 
   /* noise on top of everything */
-  p(`<g clip-path="url(#cardClip)" opacity="${t.noiseOp}" style="mix-blend-mode:overlay">
-    <rect x="-200" y="-200" width="${W + 400}" height="${H + 400}" fill="url(#noisePat)">
-      <animateTransform attributeName="transform" type="translate" values="0 0;-37 21;19 -33;28 14;0 0" dur=".7s" repeatCount="indefinite" calcMode="discrete"/>
-    </rect>
+  p(`<g clip-path="url(#cardClip)" opacity="${t.noiseOp}">
+    <rect width="${W}" height="${H}" fill="url(#noisePat)"/>
   </g>`);
 
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" `
