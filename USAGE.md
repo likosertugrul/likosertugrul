@@ -1,5 +1,19 @@
 # Profile banner — usage
 
+> **Shelved (2026-07-26).** The banner is *not* on the profile right now: `README.md`
+> was deleted, so github.com/likosertugrul shows no profile card, exactly as before.
+> All the assets and the generator stay in this repo. To bring it back, recreate
+> `README.md` with the snippet below and push.
+>
+> Open problem to pick up next time: it animates smoothly in Chrome but still
+> stutters in Safari. Already removed: animated film grain, the blur filter on the
+> border comet, the animated ASCII gradient, the drifting background gradients, the
+> full-width scanline and the glass sweeps. Still animating every frame — in rough
+> order of what to cut next: the portrait scanline, the border comet, the 11 pill
+> strokes, 8 particles, the accent gradient behind the name. If cutting those is not
+> enough, the reliable fix is to keep only the typewriter and let everything else be
+> static, which is a config change in `build.js`, not a rewrite.
+
 | file | what it is |
 | --- | --- |
 | `dark.svg` | banner, GitHub dark theme |
