@@ -71,7 +71,7 @@
 
   <filter id="fBlobs" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="55"/></filter>
   <filter id="fGlow" x="-70%" y="-70%" width="240%" height="240%">
-    <feGaussianBlur stdDeviation="2.6" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <feGaussianBlur stdDeviation="1.8" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
   </filter>
   <filter id="fGlowSm" x="-90%" y="-90%" width="280%" height="280%">
     <feGaussianBlur stdDeviation="1.7" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
@@ -129,183 +129,182 @@
   <clipPath id="ln28"><rect x="50" y="445.57" width="392" height="12.9"><animate attributeName="width" values="0;0;392" keyTimes="0;0.92;1" dur="4.05s" fill="freeze" calcMode="spline" keySplines="0 0 1 1;.2 .6 .3 1"/></rect></clipPath>
   <clipPath id="ln29"><rect x="50" y="456.47" width="392" height="12.9"><animate attributeName="width" values="0;0;392" keyTimes="0;0.92;1" dur="4.17s" fill="freeze" calcMode="spline" keySplines="0 0 1 1;.2 .6 .3 1"/></rect></clipPath>
   <g id="artLines" class="m" font-size="11.2" xml:space="preserve">
-   <text x="200.27 206.8 213.33 232.93" y="171.8" fill-opacity="0.4" clip-path="url(#ln2)">▒▒▒▒</text>
-   <text x="219.87 226.4 239.47" y="171.8" fill-opacity="0.52" clip-path="url(#ln2)">▒▒▒</text>
-   <text x="193.73" y="171.8" fill-opacity="0.64" clip-path="url(#ln2)">▒</text>
-   <text x="187.2 252.53" y="171.8" fill-opacity="0.76" clip-path="url(#ln2)">▓▓</text>
-   <text x="246" y="171.8" fill-opacity="0.88" clip-path="url(#ln2)">▓</text>
-   <text x="206.8" y="182.7" fill-opacity="0.16" clip-path="url(#ln3)">░</text>
-   <text x="200.27 213.33 232.93 239.47 246" y="182.7" fill-opacity="0.28" clip-path="url(#ln3)">░░░░░</text>
-   <text x="174.13 180.67 187.2 193.73 219.87 226.4 252.53 259.07 265.6" y="182.7" fill-opacity="0.4" clip-path="url(#ln3)">▒▒░░▒░░▒▒</text>
-   <text x="167.6 272.13" y="182.7" fill-opacity="0.52" clip-path="url(#ln3)">▒▒</text>
-   <text x="161.07" y="182.7" fill-opacity="0.64" clip-path="url(#ln3)">▒</text>
-   <text x="148 154.53" y="182.7" fill-opacity="0.76" clip-path="url(#ln3)">▓▓</text>
-   <text x="200.27 206.8 213.33 219.87 226.4 232.93 239.47 246" y="193.6" fill-opacity="0.16" clip-path="url(#ln4)">░░░░░░░░</text>
-   <text x="141.47 148 154.53 161.07 174.13 180.67 187.2 193.73 252.53 259.07 265.6" y="193.6" fill-opacity="0.28" clip-path="url(#ln4)">░░░░░░░░░░░</text>
-   <text x="134.93 167.6 272.13 278.67" y="193.6" fill-opacity="0.4" clip-path="url(#ln4)">▒░▒▒</text>
-   <text x="285.2 298.27" y="193.6" fill-opacity="0.76" clip-path="url(#ln4)">▓▓</text>
-   <text x="128.4 291.73" y="193.6" fill-opacity="0.88" clip-path="url(#ln4)">▓█</text>
-   <text x="174.13 180.67 187.2 193.73 200.27 206.8 213.33 219.87 239.47 246" y="204.5" fill-opacity="0.16" clip-path="url(#ln5)">░░░░░░░░░░</text>
-   <text x="134.93 141.47 148 154.53 161.07 167.6 226.4 232.93 252.53 259.07 285.2 291.73" y="204.5" fill-opacity="0.28" clip-path="url(#ln5)">░░░░░░░░░░░░</text>
-   <text x="121.87 128.4 265.6 272.13 278.67 298.27" y="204.5" fill-opacity="0.4" clip-path="url(#ln5)">▒░▒▒░▒</text>
-   <text x="304.8" y="204.5" fill-opacity="0.52" clip-path="url(#ln5)">▒</text>
-   <text x="311.33" y="204.5" fill-opacity="0.76" clip-path="url(#ln5)">▓</text>
-   <text x="148 154.53 174.13 180.67 187.2 193.73 200.27 206.8 239.47 246 252.53 259.07 285.2" y="215.4" fill-opacity="0.16" clip-path="url(#ln6)">░░░░░░░░░░░░░</text>
-   <text x="115.33 134.93 141.47 161.07 167.6 213.33 219.87 226.4 232.93 265.6 272.13 278.67 291.73 298.27" y="215.4" fill-opacity="0.28" clip-path="url(#ln6)">░░░░░░░░░░░░░░</text>
-   <text x="121.87 128.4" y="215.4" fill-opacity="0.4" clip-path="url(#ln6)">░▒</text>
-   <text x="304.8 311.33 317.87" y="215.4" fill-opacity="0.52" clip-path="url(#ln6)">▒▒▒</text>
-   <text x="108.8" y="215.4" fill-opacity="0.64" clip-path="url(#ln6)">▓</text>
-   <text x="128.4 134.93 141.47 148 174.13 180.67 187.2 193.73 200.27 206.8 213.33 219.87 226.4 246 252.53 259.07 265.6 272.13" y="226.3" fill-opacity="0.16" clip-path="url(#ln7)">░░░░░░░░░░░░░░░░░░</text>
-   <text x="121.87 154.53 161.07 167.6 232.93 239.47 278.67 285.2 291.73" y="226.3" fill-opacity="0.28" clip-path="url(#ln7)">░░░░░░░░░</text>
-   <text x="115.33 298.27" y="226.3" fill-opacity="0.4" clip-path="url(#ln7)">░░</text>
-   <text x="108.8 304.8" y="226.3" fill-opacity="0.52" clip-path="url(#ln7)">▒▒</text>
-   <text x="95.73 311.33" y="226.3" fill-opacity="0.64" clip-path="url(#ln7)">▒▒</text>
-   <text x="102.27 317.87" y="226.3" fill-opacity="0.76" clip-path="url(#ln7)">▓▓</text>
-   <text x="324.4" y="226.3" fill-opacity="1" clip-path="url(#ln7)">█</text>
-   <text x="121.87 128.4 134.93 148 154.53 180.67 187.2 193.73 200.27 206.8 213.33 219.87 226.4 246 252.53 259.07 265.6 272.13" y="237.2" fill-opacity="0.16" clip-path="url(#ln8)">░░░░░░░░░░░░░░░░░░</text>
-   <text x="141.47 161.07 167.6 174.13 239.47 278.67 291.73 298.27" y="237.2" fill-opacity="0.28" clip-path="url(#ln8)">░░░░░░░░</text>
-   <text x="102.27 108.8 115.33 232.93 285.2 304.8 311.33 317.87" y="237.2" fill-opacity="0.4" clip-path="url(#ln8)">▒░▒░░▒▒▒</text>
-   <text x="95.73 324.4" y="237.2" fill-opacity="0.52" clip-path="url(#ln8)">▒▒</text>
-   <text x="108.8 115.33 121.87 134.93 148 180.67 187.2 193.73 200.27 219.87 226.4 232.93 246 252.53 259.07 265.6 291.73 298.27" y="248.1" fill-opacity="0.16" clip-path="url(#ln9)">░░░░░░░░░░░░░░░░░░</text>
-   <text x="95.73 102.27 128.4 141.47 154.53 161.07 167.6 174.13 213.33 239.47 272.13 285.2 304.8 311.33 317.87 324.4" y="248.1" fill-opacity="0.28" clip-path="url(#ln9)">░░░░░░░░░░░░░░░░</text>
-   <text x="206.8 278.67" y="248.1" fill-opacity="0.4" clip-path="url(#ln9)">░░</text>
-   <text x="89.2 330.93" y="248.1" fill-opacity="0.76" clip-path="url(#ln9)">▓▓</text>
-   <text x="108.8 134.93 174.13 180.67 187.2 193.73 200.27 219.87 226.4 232.93 239.47 259.07 278.67 298.27 304.8" y="259" fill-opacity="0.16" clip-path="url(#ln10)">░░░░░░░░░░░░░░░</text>
-   <text x="95.73 102.27 115.33 121.87 128.4 141.47 148 206.8 213.33 246 252.53 265.6 272.13 285.2 291.73 311.33 317.87 324.4" y="259" fill-opacity="0.28" clip-path="url(#ln10)">░░░░░░░░░░░░░░░░░░</text>
-   <text x="89.2 154.53 167.6 330.93" y="259" fill-opacity="0.4" clip-path="url(#ln10)">░▒░░</text>
-   <text x="161.07 337.47" y="259" fill-opacity="0.52" clip-path="url(#ln10)">▒▒</text>
-   <text x="128.4 134.93 141.47 148 187.2 193.73 206.8 213.33 219.87 226.4 232.93 239.47 246 252.53 259.07 265.6 272.13 278.67 298.27 304.8 317.87" y="269.9" fill-opacity="0.16" clip-path="url(#ln11)">░░░░░░░░░░░░░░░░░░░░░</text>
-   <text x="121.87 161.07 167.6 174.13 180.67 200.27 285.2 291.73 311.33 337.47" y="269.9" fill-opacity="0.28" clip-path="url(#ln11)">░░░░░░░░░░</text>
-   <text x="95.73 102.27 115.33 324.4 330.93" y="269.9" fill-opacity="0.4" clip-path="url(#ln11)">▒▒▒░░</text>
-   <text x="89.2 108.8 154.53" y="269.9" fill-opacity="0.52" clip-path="url(#ln11)">▒▒▒</text>
-   <text x="134.93 141.47 174.13 180.67 187.2 193.73 226.4 232.93 239.47 246 252.53 259.07 265.6 272.13 278.67 304.8 317.87" y="280.8" fill-opacity="0.16" clip-path="url(#ln12)">░░░░░░░░░░░░░░░░░</text>
-   <text x="115.33 121.87 128.4 148 167.6 200.27 206.8 213.33 219.87 285.2 298.27 311.33 330.93" y="280.8" fill-opacity="0.28" clip-path="url(#ln12)">░░░░░░░░░░░░░</text>
-   <text x="102.27 161.07 291.73 324.4 337.47" y="280.8" fill-opacity="0.4" clip-path="url(#ln12)">▒▒░░░</text>
-   <text x="95.73 108.8 154.53" y="280.8" fill-opacity="0.52" clip-path="url(#ln12)">▒▒▒</text>
-   <text x="89.2" y="280.8" fill-opacity="0.64" clip-path="url(#ln12)">▒</text>
-   <text x="121.87 141.47 219.87 226.4 239.47 246 252.53 259.07 265.6 272.13 278.67 291.73 298.27 304.8" y="291.7" fill-opacity="0.16" clip-path="url(#ln13)">░░░░░░░░░░░░░░</text>
-   <text x="128.4 134.93 161.07 174.13 180.67 187.2 206.8 213.33 232.93 285.2 311.33 317.87 324.4 330.93" y="291.7" fill-opacity="0.28" clip-path="url(#ln13)">░░░░░░░░░░░░░░</text>
-   <text x="102.27 115.33 148 167.6 193.73" y="291.7" fill-opacity="0.4" clip-path="url(#ln13)">▒░▒░▒</text>
-   <text x="95.73 108.8 154.53 200.27" y="291.7" fill-opacity="0.52" clip-path="url(#ln13)">▒▒▒▒</text>
-   <text x="141.47 226.4 232.93 239.47 246 252.53 272.13 278.67 285.2 291.73 311.33 317.87" y="302.6" fill-opacity="0.16" clip-path="url(#ln14)">░░░░░░░░░░░░</text>
-   <text x="102.27 108.8 128.4 134.93 219.87 259.07 265.6 298.27 304.8" y="302.6" fill-opacity="0.28" clip-path="url(#ln14)">░░░░░░░░░</text>
-   <text x="95.73 115.33 121.87 180.67 324.4" y="302.6" fill-opacity="0.4" clip-path="url(#ln14)">▒▒░▒▒</text>
-   <text x="167.6 174.13 187.2" y="302.6" fill-opacity="0.52" clip-path="url(#ln14)">▒▒▒</text>
-   <text x="148 161.07 213.33" y="302.6" fill-opacity="0.64" clip-path="url(#ln14)">▒▒▒</text>
-   <text x="193.73 200.27 206.8" y="302.6" fill-opacity="0.76" clip-path="url(#ln14)">▓▓▓</text>
-   <text x="154.53" y="302.6" fill-opacity="0.88" clip-path="url(#ln14)">▓</text>
-   <text x="330.93" y="302.6" fill-opacity="1" clip-path="url(#ln14)">█</text>
-   <text x="108.8 115.33 121.87 128.4 134.93 232.93 278.67 285.2 291.73 298.27 304.8 311.33" y="313.5" fill-opacity="0.16" clip-path="url(#ln15)">░░░░░░░░░░░░</text>
-   <text x="102.27 219.87 226.4 239.47 246 317.87" y="313.5" fill-opacity="0.28" clip-path="url(#ln15)">░░░░░░</text>
-   <text x="141.47 174.13 193.73 213.33 252.53 259.07" y="313.5" fill-opacity="0.4" clip-path="url(#ln15)">░▒▒▒░▒</text>
-   <text x="95.73 148 154.53 161.07 180.67 187.2 206.8 272.13" y="313.5" fill-opacity="0.52" clip-path="url(#ln15)">▒▒▒▒▒▒▒▒</text>
-   <text x="167.6 200.27 265.6" y="313.5" fill-opacity="0.64" clip-path="url(#ln15)">▒▒▒</text>
-   <text x="324.4 330.93" y="313.5" fill-opacity="1" clip-path="url(#ln15)">██</text>
-   <text x="128.4 148 154.53 304.8 311.33" y="324.4" fill-opacity="0.16" clip-path="url(#ln16)">░░░░░</text>
-   <text x="108.8 115.33 121.87 161.07 285.2 298.27 317.87" y="324.4" fill-opacity="0.28" clip-path="url(#ln16)">░░░░░░░</text>
-   <text x="102.27 141.47 167.6 174.13 187.2 232.93 291.73" y="324.4" fill-opacity="0.4" clip-path="url(#ln16)">░▒░▒▒░▒</text>
-   <text x="134.93 180.67 193.73 219.87 252.53 259.07" y="324.4" fill-opacity="0.52" clip-path="url(#ln16)">▒▒▒▒▒▒</text>
-   <text x="206.8 213.33 226.4 239.47 246 265.6" y="324.4" fill-opacity="0.64" clip-path="url(#ln16)">▒▒▒▒▒▒</text>
-   <text x="200.27" y="324.4" fill-opacity="0.76" clip-path="url(#ln16)">▓</text>
-   <text x="278.67 324.4" y="324.4" fill-opacity="0.88" clip-path="url(#ln16)">▓▓</text>
-   <text x="272.13 330.93" y="324.4" fill-opacity="1" clip-path="url(#ln16)">██</text>
-   <text x="167.6 174.13 180.67 187.2 219.87 226.4 232.93 239.47 246 252.53 259.07 304.8 311.33" y="335.3" fill-opacity="0.16" clip-path="url(#ln17)">░░░░░░░░░░░░░</text>
-   <text x="128.4 134.93 161.07 317.87" y="335.3" fill-opacity="0.28" clip-path="url(#ln17)">░░░░</text>
-   <text x="148 154.53 324.4 330.93" y="335.3" fill-opacity="0.4" clip-path="url(#ln17)">▒▒▒▒</text>
-   <text x="121.87" y="335.3" fill-opacity="0.52" clip-path="url(#ln17)">▒</text>
-   <text x="193.73 213.33 265.6 291.73 298.27" y="335.3" fill-opacity="0.64" clip-path="url(#ln17)">▒▒▒▒▒</text>
-   <text x="115.33 206.8 285.2" y="335.3" fill-opacity="0.76" clip-path="url(#ln17)">▓▓▓</text>
-   <text x="141.47 200.27" y="335.3" fill-opacity="0.88" clip-path="url(#ln17)">██</text>
-   <text x="102.27 108.8 272.13 278.67" y="335.3" fill-opacity="1" clip-path="url(#ln17)">████</text>
-   <text x="174.13 180.67 304.8 317.87" y="346.2" fill-opacity="0.16" clip-path="url(#ln18)">░░░░</text>
-   <text x="128.4 167.6 232.93 239.47 298.27 311.33 324.4" y="346.2" fill-opacity="0.28" clip-path="url(#ln18)">░░░░░░░</text>
-   <text x="121.87 161.07 187.2 226.4 246" y="346.2" fill-opacity="0.4" clip-path="url(#ln18)">▒▒▒▒▒</text>
-   <text x="134.93 154.53 252.53" y="346.2" fill-opacity="0.52" clip-path="url(#ln18)">▒▒▒</text>
-   <text x="115.33 330.93" y="346.2" fill-opacity="0.64" clip-path="url(#ln18)">▒▒</text>
-   <text x="219.87 259.07" y="346.2" fill-opacity="0.76" clip-path="url(#ln18)">▓▓</text>
-   <text x="141.47" y="346.2" fill-opacity="0.88" clip-path="url(#ln18)">█</text>
-   <text x="108.8 148 193.73 200.27 206.8 213.33 265.6 272.13 278.67 285.2 291.73 337.47" y="346.2" fill-opacity="1" clip-path="url(#ln18)">████████████</text>
-   <text x="128.4 304.8 311.33" y="357.1" fill-opacity="0.16" clip-path="url(#ln19)">░░░</text>
-   <text x="134.93 317.87" y="357.1" fill-opacity="0.28" clip-path="url(#ln19)">░░</text>
-   <text x="121.87 324.4" y="357.1" fill-opacity="0.52" clip-path="url(#ln19)">▒▒</text>
-   <text x="246 298.27" y="357.1" fill-opacity="0.64" clip-path="url(#ln19)">▓▒</text>
-   <text x="115.33 180.67 206.8 213.33 219.87 226.4 291.73" y="357.1" fill-opacity="0.76" clip-path="url(#ln19)">▓▓▓▓▓▓▓</text>
-   <text x="108.8 174.13 193.73 200.27 239.47 272.13 337.47" y="357.1" fill-opacity="0.88" clip-path="url(#ln19)">█▓█▓▓██</text>
-   <text x="141.47 148 154.53 161.07 167.6 187.2 232.93 252.53 259.07 265.6 278.67 285.2 330.93" y="357.1" fill-opacity="1" clip-path="url(#ln19)">█████████████</text>
-   <text x="134.93 304.8 311.33" y="368" fill-opacity="0.16" clip-path="url(#ln20)">░░░</text>
-   <text x="206.8 219.87 226.4 246 317.87" y="368" fill-opacity="0.28" clip-path="url(#ln20)">░░░░░</text>
-   <text x="128.4 200.27 213.33 232.93 239.47 252.53 291.73 324.4" y="368" fill-opacity="0.4" clip-path="url(#ln20)">░░░░░▒▒░</text>
-   <text x="141.47" y="368" fill-opacity="0.52" clip-path="url(#ln20)">▒</text>
-   <text x="193.73" y="368" fill-opacity="0.64" clip-path="url(#ln20)">▒</text>
-   <text x="121.87" y="368" fill-opacity="0.76" clip-path="url(#ln20)">▓</text>
-   <text x="180.67 259.07 265.6 272.13" y="368" fill-opacity="0.88" clip-path="url(#ln20)">█▓▓▓</text>
-   <text x="115.33 148 187.2 278.67 285.2 298.27 330.93 337.47" y="368" fill-opacity="1" clip-path="url(#ln20)">████████</text>
-   <text x="298.27 304.8 311.33 317.87" y="378.9" fill-opacity="0.16" clip-path="url(#ln21)">░░░░</text>
-   <text x="134.93 193.73 200.27 324.4" y="378.9" fill-opacity="0.4" clip-path="url(#ln21)">░▒▒▒</text>
-   <text x="187.2 219.87 291.73" y="378.9" fill-opacity="0.52" clip-path="url(#ln21)">▒▒▒</text>
-   <text x="148 206.8 213.33 226.4 232.93" y="378.9" fill-opacity="0.64" clip-path="url(#ln21)">▓▒▒▒▒</text>
-   <text x="121.87 128.4" y="378.9" fill-opacity="0.76" clip-path="url(#ln21)">▓▓</text>
-   <text x="115.33 239.47 246 252.53 259.07 265.6 272.13 285.2" y="378.9" fill-opacity="0.88" clip-path="url(#ln21)">█▓▓▓███▓</text>
-   <text x="141.47 278.67 330.93 337.47" y="378.9" fill-opacity="1" clip-path="url(#ln21)">████</text>
-   <text x="298.27 304.8 311.33 317.87 324.4" y="389.8" fill-opacity="0.16" clip-path="url(#ln22)">░░░░░</text>
-   <text x="148" y="389.8" fill-opacity="0.4" clip-path="url(#ln22)">░</text>
-   <text x="128.4 134.93 291.73 330.93" y="389.8" fill-opacity="0.52" clip-path="url(#ln22)">▒▒▒▒</text>
-   <text x="141.47" y="389.8" fill-opacity="0.64" clip-path="url(#ln22)">▒</text>
-   <text x="121.87 206.8 213.33 219.87 278.67" y="389.8" fill-opacity="0.76" clip-path="url(#ln22)">▓▓▓▓▓</text>
-   <text x="246 252.53 259.07 265.6 272.13 337.47" y="389.8" fill-opacity="0.88" clip-path="url(#ln22)">▓▓██▓▓</text>
-   <text x="154.53 161.07 200.27 226.4 232.93 239.47 285.2 344 350.53" y="389.8" fill-opacity="1" clip-path="url(#ln22)">█████████</text>
-   <text x="141.47 148 154.53 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344" y="400.7" fill-opacity="0.16" clip-path="url(#ln23)">░░░░░░░░░░░</text>
-   <text x="134.93" y="400.7" fill-opacity="0.28" clip-path="url(#ln23)">░</text>
-   <text x="128.4 291.73 350.53" y="400.7" fill-opacity="0.4" clip-path="url(#ln23)">▒▒▒</text>
-   <text x="219.87 259.07 265.6 272.13 285.2" y="400.7" fill-opacity="0.76" clip-path="url(#ln23)">▓▓▓▓▓</text>
-   <text x="121.87 226.4 232.93 246 252.53 278.67" y="400.7" fill-opacity="0.88" clip-path="url(#ln23)">▓██▓▓█</text>
-   <text x="161.07 167.6 239.47 357.07 363.6" y="400.7" fill-opacity="1" clip-path="url(#ln23)">█████</text>
-   <text x="134.93 148 154.53 161.07 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07" y="411.6" fill-opacity="0.16" clip-path="url(#ln24)">░░░░░░░░░░░░░░░</text>
-   <text x="141.47" y="411.6" fill-opacity="0.28" clip-path="url(#ln24)">░</text>
-   <text x="128.4 363.6" y="411.6" fill-opacity="0.4" clip-path="url(#ln24)">▒▒</text>
-   <text x="167.6 370.13" y="411.6" fill-opacity="0.52" clip-path="url(#ln24)">▒▒</text>
-   <text x="252.53 259.07 376.67" y="411.6" fill-opacity="0.64" clip-path="url(#ln24)">▒▒▒</text>
-   <text x="121.87 246 265.6" y="411.6" fill-opacity="0.76" clip-path="url(#ln24)">▓▓▓</text>
-   <text x="239.47 272.13 278.67 285.2" y="411.6" fill-opacity="0.88" clip-path="url(#ln24)">███▓</text>
-   <text x="174.13 219.87 226.4 232.93" y="411.6" fill-opacity="1" clip-path="url(#ln24)">████</text>
-   <text x="161.07 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 376.67 383.2" y="422.5" fill-opacity="0.16" clip-path="url(#ln25)">░░░░░░░░░░░░░░░</text>
-   <text x="167.6 370.13 389.73" y="422.5" fill-opacity="0.28" clip-path="url(#ln25)">░░░</text>
-   <text x="154.53 285.2" y="422.5" fill-opacity="0.4" clip-path="url(#ln25)">▒▒</text>
-   <text x="134.93 141.47 226.4 232.93 239.47 246" y="422.5" fill-opacity="0.52" clip-path="url(#ln25)">▒▒▒▒▒▒</text>
-   <text x="148 219.87 252.53" y="422.5" fill-opacity="0.64" clip-path="url(#ln25)">▓▒▒</text>
-   <text x="128.4 259.07 278.67 396.27" y="422.5" fill-opacity="0.76" clip-path="url(#ln25)">▓▓▓▓</text>
-   <text x="174.13 265.6" y="422.5" fill-opacity="0.88" clip-path="url(#ln25)">▓█</text>
-   <text x="180.67 272.13" y="422.5" fill-opacity="1" clip-path="url(#ln25)">██</text>
-   <text x="167.6 174.13 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 376.67 383.2" y="433.4" fill-opacity="0.16" clip-path="url(#ln26)">░░░░░░░░░░░░░░░░░</text>
-   <text x="370.13 389.73 396.27" y="433.4" fill-opacity="0.28" clip-path="url(#ln26)">░░░</text>
-   <text x="161.07 219.87 226.4 402.8" y="433.4" fill-opacity="0.52" clip-path="url(#ln26)">▒▒▒▒</text>
-   <text x="148 232.93 239.47 278.67 409.33" y="433.4" fill-opacity="0.64" clip-path="url(#ln26)">▒▒▓▓▒</text>
-   <text x="154.53 246" y="433.4" fill-opacity="0.76" clip-path="url(#ln26)">▓▓</text>
-   <text x="128.4 252.53 259.07 265.6" y="433.4" fill-opacity="0.88" clip-path="url(#ln26)">█▓▓█</text>
-   <text x="134.93 141.47 180.67 187.2 272.13" y="433.4" fill-opacity="1" clip-path="url(#ln26)">█████</text>
-   <text x="167.6 174.13 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27" y="444.3" fill-opacity="0.16" clip-path="url(#ln27)">░░░░░░░░░░░░░░░░░░░░</text>
-   <text x="128.4 134.93 154.53 161.07 402.8 409.33 415.87" y="444.3" fill-opacity="0.4" clip-path="url(#ln27)">▒▒▒░░▒░</text>
-   <text x="141.47 278.67" y="444.3" fill-opacity="0.52" clip-path="url(#ln27)">▒▒</text>
-   <text x="148 180.67 422.4" y="444.3" fill-opacity="0.64" clip-path="url(#ln27)">▒▓▒</text>
-   <text x="219.87 226.4 232.93 272.13" y="444.3" fill-opacity="0.76" clip-path="url(#ln27)">▓▓▓▓</text>
-   <text x="239.47 246 252.53 259.07 265.6" y="444.3" fill-opacity="0.88" clip-path="url(#ln27)">▓▓▓▓▓</text>
-   <text x="187.2 428.93 435.47" y="444.3" fill-opacity="1" clip-path="url(#ln27)">███</text>
-   <text x="148 167.6 174.13 180.67 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27 402.8" y="455.2" fill-opacity="0.16" clip-path="url(#ln28)">░░░░░░░░░░░░░░░░░░░░░░░</text>
-   <text x="409.33 415.87" y="455.2" fill-opacity="0.28" clip-path="url(#ln28)">░░</text>
-   <text x="141.47 154.53 161.07 278.67 422.4" y="455.2" fill-opacity="0.4" clip-path="url(#ln28)">▒░░░░</text>
-   <text x="134.93" y="455.2" fill-opacity="0.52" clip-path="url(#ln28)">▒</text>
-   <text x="272.13 428.93" y="455.2" fill-opacity="0.64" clip-path="url(#ln28)">▒▒</text>
-   <text x="239.47 246 252.53 259.07 265.6" y="455.2" fill-opacity="0.76" clip-path="url(#ln28)">▓▓▓▓▓</text>
-   <text x="232.93 435.47" y="455.2" fill-opacity="0.88" clip-path="url(#ln28)">▓▓</text>
-   <text x="121.87 128.4 187.2 193.73" y="455.2" fill-opacity="1" clip-path="url(#ln28)">████</text>
-   <text x="167.6 174.13 180.67 278.67 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27 402.8 409.33 415.87 422.4" y="466.1" fill-opacity="0.16" clip-path="url(#ln29)">░░░░░░░░░░░░░░░░░░░░░░░░░░</text>
-   <text x="148 161.07 428.93" y="466.1" fill-opacity="0.28" clip-path="url(#ln29)">░░░</text>
-   <text x="134.93 141.47 154.53 435.47" y="466.1" fill-opacity="0.4" clip-path="url(#ln29)">▒▒▒▒</text>
-   <text x="115.33 128.4 187.2" y="466.1" fill-opacity="0.52" clip-path="url(#ln29)">▒▒▒</text>
-   <text x="121.87" y="466.1" fill-opacity="0.64" clip-path="url(#ln29)">▒</text>
-   <text x="259.07 265.6 272.13" y="466.1" fill-opacity="0.76" clip-path="url(#ln29)">▓▓▓</text>
-   <text x="246 252.53" y="466.1" fill-opacity="0.88" clip-path="url(#ln29)">█▓</text>
-   <text x="193.73" y="466.1" fill-opacity="1" clip-path="url(#ln29)">█</text>
+   <text x="187.2 246 252.53" y="171.8" fill-opacity="0.37" clip-path="url(#ln2)">███</text>
+   <text x="193.73" y="171.8" fill-opacity="0.5" clip-path="url(#ln2)">█</text>
+   <text x="219.87 226.4 239.47" y="171.8" fill-opacity="0.62" clip-path="url(#ln2)">███</text>
+   <text x="200.27 206.8 213.33 232.93" y="171.8" fill-opacity="0.75" clip-path="url(#ln2)">████</text>
+   <text x="148 154.53" y="182.7" fill-opacity="0.37" clip-path="url(#ln3)">██</text>
+   <text x="161.07" y="182.7" fill-opacity="0.5" clip-path="url(#ln3)">█</text>
+   <text x="167.6 272.13" y="182.7" fill-opacity="0.62" clip-path="url(#ln3)">██</text>
+   <text x="174.13 180.67 187.2 193.73 219.87 226.4 252.53 259.07 265.6" y="182.7" fill-opacity="0.75" clip-path="url(#ln3)">█████████</text>
+   <text x="200.27 213.33 232.93 239.47 246" y="182.7" fill-opacity="0.87" clip-path="url(#ln3)">█████</text>
+   <text x="206.8" y="182.7" fill-opacity="1" clip-path="url(#ln3)">█</text>
+   <text x="128.4 285.2 291.73 298.27" y="193.6" fill-opacity="0.37" clip-path="url(#ln4)">████</text>
+   <text x="134.93 167.6 272.13 278.67" y="193.6" fill-opacity="0.75" clip-path="url(#ln4)">████</text>
+   <text x="141.47 148 154.53 161.07 174.13 180.67 187.2 193.73 259.07 265.6" y="193.6" fill-opacity="0.87" clip-path="url(#ln4)">██████████</text>
+   <text x="200.27 206.8 213.33 219.87 226.4 232.93 239.47 246 252.53" y="193.6" fill-opacity="1" clip-path="url(#ln4)">█████████</text>
+   <text x="311.33" y="204.5" fill-opacity="0.37" clip-path="url(#ln5)">█</text>
+   <text x="304.8" y="204.5" fill-opacity="0.62" clip-path="url(#ln5)">█</text>
+   <text x="121.87 128.4 265.6 272.13 298.27" y="204.5" fill-opacity="0.75" clip-path="url(#ln5)">█████</text>
+   <text x="134.93 141.47 148 154.53 161.07 167.6 226.4 232.93 252.53 259.07 278.67 285.2 291.73" y="204.5" fill-opacity="0.87" clip-path="url(#ln5)">█████████████</text>
+   <text x="174.13 180.67 187.2 193.73 200.27 206.8 213.33 219.87 239.47 246" y="204.5" fill-opacity="1" clip-path="url(#ln5)">██████████</text>
+   <text x="108.8" y="215.4" fill-opacity="0.5" clip-path="url(#ln6)">█</text>
+   <text x="304.8 311.33 317.87" y="215.4" fill-opacity="0.62" clip-path="url(#ln6)">███</text>
+   <text x="121.87 128.4" y="215.4" fill-opacity="0.75" clip-path="url(#ln6)">██</text>
+   <text x="115.33 134.93 141.47 161.07 167.6 213.33 219.87 226.4 232.93 265.6 272.13 278.67 291.73 298.27" y="215.4" fill-opacity="0.87" clip-path="url(#ln6)">██████████████</text>
+   <text x="148 154.53 174.13 180.67 187.2 193.73 200.27 206.8 239.47 246 252.53 259.07 285.2" y="215.4" fill-opacity="1" clip-path="url(#ln6)">█████████████</text>
+   <text x="324.4" y="226.3" fill-opacity="0.25" clip-path="url(#ln7)">█</text>
+   <text x="102.27 317.87" y="226.3" fill-opacity="0.37" clip-path="url(#ln7)">██</text>
+   <text x="95.73 311.33" y="226.3" fill-opacity="0.5" clip-path="url(#ln7)">██</text>
+   <text x="108.8 304.8" y="226.3" fill-opacity="0.62" clip-path="url(#ln7)">██</text>
+   <text x="115.33 298.27" y="226.3" fill-opacity="0.75" clip-path="url(#ln7)">██</text>
+   <text x="121.87 154.53 161.07 167.6 232.93 239.47 278.67 285.2 291.73" y="226.3" fill-opacity="0.87" clip-path="url(#ln7)">█████████</text>
+   <text x="128.4 134.93 141.47 148 174.13 180.67 187.2 193.73 200.27 206.8 213.33 219.87 226.4 246 252.53 259.07 265.6 272.13" y="226.3" fill-opacity="1" clip-path="url(#ln7)">██████████████████</text>
+   <text x="95.73 324.4" y="237.2" fill-opacity="0.62" clip-path="url(#ln8)">██</text>
+   <text x="102.27 108.8 115.33 232.93 285.2 304.8 311.33 317.87" y="237.2" fill-opacity="0.75" clip-path="url(#ln8)">████████</text>
+   <text x="141.47 161.07 167.6 174.13 187.2 239.47 278.67 291.73 298.27" y="237.2" fill-opacity="0.87" clip-path="url(#ln8)">█████████</text>
+   <text x="121.87 128.4 134.93 148 154.53 180.67 193.73 200.27 206.8 213.33 219.87 226.4 246 252.53 259.07 265.6 272.13" y="237.2" fill-opacity="1" clip-path="url(#ln8)">█████████████████</text>
+   <text x="330.93" y="248.1" fill-opacity="0.37" clip-path="url(#ln9)">█</text>
+   <text x="89.2" y="248.1" fill-opacity="0.5" clip-path="url(#ln9)">█</text>
+   <text x="206.8 278.67" y="248.1" fill-opacity="0.75" clip-path="url(#ln9)">██</text>
+   <text x="95.73 102.27 128.4 141.47 154.53 161.07 167.6 174.13 213.33 239.47 272.13 285.2 304.8 311.33 317.87 324.4" y="248.1" fill-opacity="0.87" clip-path="url(#ln9)">████████████████</text>
+   <text x="108.8 115.33 121.87 134.93 148 180.67 187.2 193.73 200.27 219.87 226.4 232.93 246 252.53 259.07 265.6 291.73 298.27" y="248.1" fill-opacity="1" clip-path="url(#ln9)">██████████████████</text>
+   <text x="161.07 337.47" y="259" fill-opacity="0.62" clip-path="url(#ln10)">██</text>
+   <text x="89.2 154.53 167.6 285.2 330.93" y="259" fill-opacity="0.75" clip-path="url(#ln10)">█████</text>
+   <text x="95.73 102.27 115.33 121.87 128.4 141.47 148 206.8 213.33 246 252.53 265.6 272.13 291.73 311.33 317.87 324.4" y="259" fill-opacity="0.87" clip-path="url(#ln10)">█████████████████</text>
+   <text x="108.8 134.93 174.13 180.67 187.2 193.73 200.27 219.87 226.4 232.93 239.47 259.07 278.67 298.27 304.8" y="259" fill-opacity="1" clip-path="url(#ln10)">███████████████</text>
+   <text x="89.2 108.8 154.53" y="269.9" fill-opacity="0.62" clip-path="url(#ln11)">███</text>
+   <text x="95.73 102.27 115.33 324.4 330.93" y="269.9" fill-opacity="0.75" clip-path="url(#ln11)">█████</text>
+   <text x="121.87 161.07 167.6 174.13 180.67 200.27 285.2 311.33 337.47" y="269.9" fill-opacity="0.87" clip-path="url(#ln11)">█████████</text>
+   <text x="128.4 134.93 141.47 148 187.2 193.73 206.8 213.33 219.87 226.4 232.93 239.47 246 252.53 259.07 265.6 272.13 278.67 291.73 298.27 304.8 317.87" y="269.9" fill-opacity="1" clip-path="url(#ln11)">██████████████████████</text>
+   <text x="89.2" y="280.8" fill-opacity="0.5" clip-path="url(#ln12)">█</text>
+   <text x="95.73 108.8 154.53" y="280.8" fill-opacity="0.62" clip-path="url(#ln12)">███</text>
+   <text x="102.27 161.07 213.33 291.73 324.4 337.47" y="280.8" fill-opacity="0.75" clip-path="url(#ln12)">██████</text>
+   <text x="115.33 121.87 128.4 148 167.6 200.27 206.8 219.87 285.2 298.27 311.33 330.93" y="280.8" fill-opacity="0.87" clip-path="url(#ln12)">████████████</text>
+   <text x="134.93 141.47 174.13 180.67 187.2 193.73 226.4 232.93 239.47 246 252.53 259.07 265.6 272.13 278.67 304.8 317.87" y="280.8" fill-opacity="1" clip-path="url(#ln12)">█████████████████</text>
+   <text x="95.73 108.8 154.53 200.27" y="291.7" fill-opacity="0.62" clip-path="url(#ln13)">████</text>
+   <text x="102.27 115.33 148 167.6 193.73" y="291.7" fill-opacity="0.75" clip-path="url(#ln13)">█████</text>
+   <text x="128.4 134.93 161.07 174.13 180.67 187.2 206.8 213.33 232.93 285.2 311.33 317.87 324.4 330.93" y="291.7" fill-opacity="0.87" clip-path="url(#ln13)">██████████████</text>
+   <text x="121.87 141.47 219.87 226.4 239.47 246 252.53 259.07 265.6 272.13 278.67 291.73 298.27 304.8" y="291.7" fill-opacity="1" clip-path="url(#ln13)">██████████████</text>
+   <text x="330.93" y="302.6" fill-opacity="0.12" clip-path="url(#ln14)">█</text>
+   <text x="154.53 200.27" y="302.6" fill-opacity="0.37" clip-path="url(#ln14)">██</text>
+   <text x="148 161.07 193.73 206.8 213.33" y="302.6" fill-opacity="0.5" clip-path="url(#ln14)">█████</text>
+   <text x="167.6 174.13 187.2" y="302.6" fill-opacity="0.62" clip-path="url(#ln14)">███</text>
+   <text x="95.73 115.33 121.87 180.67 324.4" y="302.6" fill-opacity="0.75" clip-path="url(#ln14)">█████</text>
+   <text x="102.27 108.8 128.4 134.93 219.87 259.07 265.6 298.27 304.8" y="302.6" fill-opacity="0.87" clip-path="url(#ln14)">█████████</text>
+   <text x="141.47 226.4 232.93 239.47 246 252.53 272.13 278.67 285.2 291.73 311.33 317.87" y="302.6" fill-opacity="1" clip-path="url(#ln14)">████████████</text>
+   <text x="330.93" y="313.5" fill-opacity="0.12" clip-path="url(#ln15)">█</text>
+   <text x="324.4" y="313.5" fill-opacity="0.25" clip-path="url(#ln15)">█</text>
+   <text x="167.6 200.27 265.6" y="313.5" fill-opacity="0.5" clip-path="url(#ln15)">███</text>
+   <text x="95.73 148 154.53 161.07 180.67 187.2 206.8 272.13" y="313.5" fill-opacity="0.62" clip-path="url(#ln15)">████████</text>
+   <text x="141.47 174.13 193.73 213.33 252.53 259.07" y="313.5" fill-opacity="0.75" clip-path="url(#ln15)">██████</text>
+   <text x="102.27 219.87 226.4 239.47 246 317.87" y="313.5" fill-opacity="0.87" clip-path="url(#ln15)">██████</text>
+   <text x="108.8 115.33 121.87 128.4 134.93 232.93 278.67 285.2 291.73 298.27 304.8 311.33" y="313.5" fill-opacity="1" clip-path="url(#ln15)">████████████</text>
+   <text x="330.93" y="324.4" fill-opacity="0.12" clip-path="url(#ln16)">█</text>
+   <text x="272.13" y="324.4" fill-opacity="0.25" clip-path="url(#ln16)">█</text>
+   <text x="278.67 324.4" y="324.4" fill-opacity="0.37" clip-path="url(#ln16)">██</text>
+   <text x="200.27 206.8 213.33 226.4 239.47 246 252.53 265.6" y="324.4" fill-opacity="0.5" clip-path="url(#ln16)">████████</text>
+   <text x="134.93 180.67 193.73 219.87 259.07" y="324.4" fill-opacity="0.62" clip-path="url(#ln16)">█████</text>
+   <text x="102.27 141.47 167.6 174.13 187.2 232.93 291.73" y="324.4" fill-opacity="0.75" clip-path="url(#ln16)">███████</text>
+   <text x="108.8 115.33 121.87 161.07 285.2 298.27 317.87" y="324.4" fill-opacity="0.87" clip-path="url(#ln16)">███████</text>
+   <text x="128.4 148 154.53 304.8 311.33" y="324.4" fill-opacity="1" clip-path="url(#ln16)">█████</text>
+   <text x="102.27 108.8 272.13 278.67" y="335.3" fill-opacity="0.12" clip-path="url(#ln17)">████</text>
+   <text x="200.27" y="335.3" fill-opacity="0.25" clip-path="url(#ln17)">█</text>
+   <text x="115.33 141.47 206.8 285.2" y="335.3" fill-opacity="0.37" clip-path="url(#ln17)">████</text>
+   <text x="193.73 213.33 265.6 291.73 298.27" y="335.3" fill-opacity="0.5" clip-path="url(#ln17)">█████</text>
+   <text x="121.87" y="335.3" fill-opacity="0.62" clip-path="url(#ln17)">█</text>
+   <text x="148 154.53 324.4 330.93" y="335.3" fill-opacity="0.75" clip-path="url(#ln17)">████</text>
+   <text x="128.4 134.93 161.07 317.87" y="335.3" fill-opacity="0.87" clip-path="url(#ln17)">████</text>
+   <text x="167.6 174.13 180.67 187.2 219.87 226.4 232.93 239.47 246 252.53 259.07 304.8 311.33" y="335.3" fill-opacity="1" clip-path="url(#ln17)">█████████████</text>
+   <text x="108.8 193.73 200.27 272.13 278.67" y="346.2" fill-opacity="0.12" clip-path="url(#ln18)">█████</text>
+   <text x="148 206.8 213.33 265.6 285.2 291.73 337.47" y="346.2" fill-opacity="0.25" clip-path="url(#ln18)">███████</text>
+   <text x="141.47 219.87 259.07" y="346.2" fill-opacity="0.37" clip-path="url(#ln18)">███</text>
+   <text x="115.33 330.93" y="346.2" fill-opacity="0.5" clip-path="url(#ln18)">██</text>
+   <text x="134.93 154.53 252.53" y="346.2" fill-opacity="0.62" clip-path="url(#ln18)">███</text>
+   <text x="121.87 161.07 187.2 226.4 246" y="346.2" fill-opacity="0.75" clip-path="url(#ln18)">█████</text>
+   <text x="128.4 167.6 232.93 239.47 298.27 311.33 324.4" y="346.2" fill-opacity="0.87" clip-path="url(#ln18)">███████</text>
+   <text x="174.13 180.67 304.8 317.87" y="346.2" fill-opacity="1" clip-path="url(#ln18)">████</text>
+   <text x="141.47 148 154.53 161.07 167.6 187.2 278.67" y="357.1" fill-opacity="0.12" clip-path="url(#ln19)">███████</text>
+   <text x="108.8 193.73 232.93 252.53 259.07 265.6 272.13 285.2 330.93 337.47" y="357.1" fill-opacity="0.25" clip-path="url(#ln19)">██████████</text>
+   <text x="115.33 174.13 180.67 200.27 206.8 226.4 239.47 291.73" y="357.1" fill-opacity="0.37" clip-path="url(#ln19)">████████</text>
+   <text x="213.33 219.87 246 298.27" y="357.1" fill-opacity="0.5" clip-path="url(#ln19)">████</text>
+   <text x="121.87 324.4" y="357.1" fill-opacity="0.62" clip-path="url(#ln19)">██</text>
+   <text x="134.93 317.87" y="357.1" fill-opacity="0.87" clip-path="url(#ln19)">██</text>
+   <text x="128.4 304.8 311.33" y="357.1" fill-opacity="1" clip-path="url(#ln19)">███</text>
+   <text x="148 278.67" y="368" fill-opacity="0.12" clip-path="url(#ln20)">██</text>
+   <text x="115.33 187.2 265.6 272.13 285.2 298.27 330.93 337.47" y="368" fill-opacity="0.25" clip-path="url(#ln20)">████████</text>
+   <text x="121.87 180.67 259.07" y="368" fill-opacity="0.37" clip-path="url(#ln20)">███</text>
+   <text x="193.73" y="368" fill-opacity="0.5" clip-path="url(#ln20)">█</text>
+   <text x="141.47" y="368" fill-opacity="0.62" clip-path="url(#ln20)">█</text>
+   <text x="128.4 213.33 232.93 239.47 252.53 291.73 324.4" y="368" fill-opacity="0.75" clip-path="url(#ln20)">███████</text>
+   <text x="200.27 206.8 219.87 226.4 246 317.87" y="368" fill-opacity="0.87" clip-path="url(#ln20)">██████</text>
+   <text x="134.93 304.8 311.33" y="368" fill-opacity="1" clip-path="url(#ln20)">███</text>
+   <text x="141.47 330.93 337.47" y="378.9" fill-opacity="0.12" clip-path="url(#ln21)">███</text>
+   <text x="115.33 259.07 265.6 272.13 278.67" y="378.9" fill-opacity="0.25" clip-path="url(#ln21)">█████</text>
+   <text x="121.87 148 239.47 246 252.53 285.2" y="378.9" fill-opacity="0.37" clip-path="url(#ln21)">██████</text>
+   <text x="128.4 206.8 213.33 226.4 232.93" y="378.9" fill-opacity="0.5" clip-path="url(#ln21)">█████</text>
+   <text x="187.2 219.87 291.73" y="378.9" fill-opacity="0.62" clip-path="url(#ln21)">███</text>
+   <text x="134.93 193.73 200.27 324.4" y="378.9" fill-opacity="0.75" clip-path="url(#ln21)">████</text>
+   <text x="298.27 304.8 311.33 317.87" y="378.9" fill-opacity="1" clip-path="url(#ln21)">████</text>
+   <text x="154.53 161.07 350.53" y="389.8" fill-opacity="0.12" clip-path="url(#ln22)">███</text>
+   <text x="200.27 226.4 232.93 239.47 246 252.53 259.07 265.6 272.13 285.2 344" y="389.8" fill-opacity="0.25" clip-path="url(#ln22)">███████████</text>
+   <text x="121.87 206.8 213.33 219.87 278.67 337.47" y="389.8" fill-opacity="0.37" clip-path="url(#ln22)">██████</text>
+   <text x="141.47" y="389.8" fill-opacity="0.5" clip-path="url(#ln22)">█</text>
+   <text x="128.4 134.93 291.73 330.93" y="389.8" fill-opacity="0.62" clip-path="url(#ln22)">████</text>
+   <text x="148" y="389.8" fill-opacity="0.75" clip-path="url(#ln22)">█</text>
+   <text x="298.27 304.8 311.33 317.87 324.4" y="389.8" fill-opacity="1" clip-path="url(#ln22)">█████</text>
+   <text x="161.07 167.6 357.07 363.6" y="400.7" fill-opacity="0.12" clip-path="url(#ln23)">████</text>
+   <text x="226.4 232.93 239.47 246 252.53 278.67" y="400.7" fill-opacity="0.25" clip-path="url(#ln23)">██████</text>
+   <text x="121.87 219.87 259.07 265.6 272.13 285.2" y="400.7" fill-opacity="0.37" clip-path="url(#ln23)">██████</text>
+   <text x="128.4 291.73 350.53" y="400.7" fill-opacity="0.75" clip-path="url(#ln23)">███</text>
+   <text x="134.93" y="400.7" fill-opacity="0.87" clip-path="url(#ln23)">█</text>
+   <text x="141.47 148 154.53 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344" y="400.7" fill-opacity="1" clip-path="url(#ln23)">███████████</text>
+   <text x="174.13" y="411.6" fill-opacity="0.12" clip-path="url(#ln24)">█</text>
+   <text x="219.87 226.4 232.93 239.47 272.13 278.67" y="411.6" fill-opacity="0.25" clip-path="url(#ln24)">██████</text>
+   <text x="121.87 246 265.6 285.2" y="411.6" fill-opacity="0.37" clip-path="url(#ln24)">████</text>
+   <text x="252.53 259.07 376.67" y="411.6" fill-opacity="0.5" clip-path="url(#ln24)">███</text>
+   <text x="167.6 370.13" y="411.6" fill-opacity="0.62" clip-path="url(#ln24)">██</text>
+   <text x="128.4 363.6" y="411.6" fill-opacity="0.75" clip-path="url(#ln24)">██</text>
+   <text x="141.47" y="411.6" fill-opacity="0.87" clip-path="url(#ln24)">█</text>
+   <text x="134.93 148 154.53 161.07 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07" y="411.6" fill-opacity="1" clip-path="url(#ln24)">███████████████</text>
+   <text x="180.67" y="422.5" fill-opacity="0.12" clip-path="url(#ln25)">█</text>
+   <text x="265.6 272.13" y="422.5" fill-opacity="0.25" clip-path="url(#ln25)">██</text>
+   <text x="128.4 174.13 259.07 278.67 396.27" y="422.5" fill-opacity="0.37" clip-path="url(#ln25)">█████</text>
+   <text x="148 219.87 226.4 232.93 246 252.53" y="422.5" fill-opacity="0.5" clip-path="url(#ln25)">██████</text>
+   <text x="134.93 141.47 239.47" y="422.5" fill-opacity="0.62" clip-path="url(#ln25)">███</text>
+   <text x="154.53 285.2" y="422.5" fill-opacity="0.75" clip-path="url(#ln25)">██</text>
+   <text x="167.6 370.13 389.73" y="422.5" fill-opacity="0.87" clip-path="url(#ln25)">███</text>
+   <text x="161.07 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 376.67 383.2" y="422.5" fill-opacity="1" clip-path="url(#ln25)">███████████████</text>
+   <text x="134.93 180.67 187.2" y="433.4" fill-opacity="0.12" clip-path="url(#ln26)">███</text>
+   <text x="141.47 252.53 265.6 272.13" y="433.4" fill-opacity="0.25" clip-path="url(#ln26)">████</text>
+   <text x="128.4 246 259.07" y="433.4" fill-opacity="0.37" clip-path="url(#ln26)">███</text>
+   <text x="148 154.53 232.93 239.47 278.67 409.33" y="433.4" fill-opacity="0.5" clip-path="url(#ln26)">██████</text>
+   <text x="161.07 219.87 226.4 402.8" y="433.4" fill-opacity="0.62" clip-path="url(#ln26)">████</text>
+   <text x="370.13 389.73 396.27" y="433.4" fill-opacity="0.87" clip-path="url(#ln26)">███</text>
+   <text x="167.6 174.13 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 376.67 383.2" y="433.4" fill-opacity="1" clip-path="url(#ln26)">█████████████████</text>
+   <text x="187.2 428.93 435.47" y="444.3" fill-opacity="0.12" clip-path="url(#ln27)">███</text>
+   <text x="252.53 259.07" y="444.3" fill-opacity="0.25" clip-path="url(#ln27)">██</text>
+   <text x="219.87 226.4 232.93 239.47 246 265.6 272.13" y="444.3" fill-opacity="0.37" clip-path="url(#ln27)">███████</text>
+   <text x="148 180.67 422.4" y="444.3" fill-opacity="0.5" clip-path="url(#ln27)">███</text>
+   <text x="141.47 278.67" y="444.3" fill-opacity="0.62" clip-path="url(#ln27)">██</text>
+   <text x="128.4 134.93 154.53 161.07 402.8 409.33 415.87" y="444.3" fill-opacity="0.75" clip-path="url(#ln27)">███████</text>
+   <text x="167.6 174.13 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27" y="444.3" fill-opacity="1" clip-path="url(#ln27)">████████████████████</text>
+   <text x="187.2 193.73" y="455.2" fill-opacity="0.12" clip-path="url(#ln28)">██</text>
+   <text x="121.87 128.4" y="455.2" fill-opacity="0.25" clip-path="url(#ln28)">██</text>
+   <text x="232.93 239.47 246 252.53 259.07 265.6 435.47" y="455.2" fill-opacity="0.37" clip-path="url(#ln28)">███████</text>
+   <text x="272.13 428.93" y="455.2" fill-opacity="0.5" clip-path="url(#ln28)">██</text>
+   <text x="134.93" y="455.2" fill-opacity="0.62" clip-path="url(#ln28)">█</text>
+   <text x="141.47 154.53 161.07 278.67 422.4" y="455.2" fill-opacity="0.75" clip-path="url(#ln28)">█████</text>
+   <text x="409.33 415.87" y="455.2" fill-opacity="0.87" clip-path="url(#ln28)">██</text>
+   <text x="148 167.6 174.13 180.67 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27 402.8" y="455.2" fill-opacity="1" clip-path="url(#ln28)">███████████████████████</text>
+   <text x="193.73" y="466.1" fill-opacity="0.12" clip-path="url(#ln29)">█</text>
+   <text x="246 252.53" y="466.1" fill-opacity="0.25" clip-path="url(#ln29)">██</text>
+   <text x="259.07 265.6" y="466.1" fill-opacity="0.37" clip-path="url(#ln29)">██</text>
+   <text x="121.87 272.13" y="466.1" fill-opacity="0.5" clip-path="url(#ln29)">██</text>
+   <text x="115.33 128.4 187.2" y="466.1" fill-opacity="0.62" clip-path="url(#ln29)">███</text>
+   <text x="134.93 141.47 154.53 435.47" y="466.1" fill-opacity="0.75" clip-path="url(#ln29)">████</text>
+   <text x="148 161.07 428.93" y="466.1" fill-opacity="0.87" clip-path="url(#ln29)">███</text>
+   <text x="167.6 174.13 180.67 278.67 285.2 291.73 298.27 304.8 311.33 317.87 324.4 330.93 337.47 344 350.53 357.07 363.6 370.13 376.67 383.2 389.73 396.27 402.8 409.33 415.87 422.4" y="466.1" fill-opacity="1" clip-path="url(#ln29)">██████████████████████████</text>
   </g>
   <clipPath id="role0"><rect x="512" y="164" width="204" height="26"><animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;180;192;204;204;192;180;168;156;144;132;120;108;96;84;72;60;48;36;24;12;0;0" keyTimes="0;0;0;0.0041670000000000006;0.008333;0.0125;0.016666999999999998;0.020833;0.025;0.029167000000000002;0.033333;0.0375;0.041667;0.045833;0.05;0.05416699999999999;0.058333;0.0625;0.06666699999999999;0.14375;0.14375;0.145833;0.14791700000000002;0.15;0.152083;0.154167;0.15625;0.158333;0.160417;0.1625;0.16458299999999998;0.166667;0.16875;0.17083299999999998;0.17291700000000002;0.175;0.177083;1" dur="24s" begin="1.9s" repeatCount="indefinite" calcMode="discrete"/></rect></clipPath>
   <clipPath id="role1"><rect x="512" y="164" width="0" height="26"><animate attributeName="width" values="0;0;12;24;36;48;60;72;84;96;108;120;132;144;156;168;180;192;204;216;228;240;240;228;216;204;192;180;168;156;144;132;120;108;96;84;72;60;48;36;24;12;0;0" keyTimes="0;0.2;0.2;0.203542;0.207083;0.210625;0.214167;0.21770799999999998;0.22125;0.22479200000000002;0.22833299999999998;0.231875;0.23541700000000002;0.238958;0.2425;0.246042;0.249583;0.253125;0.25666700000000003;0.260208;0.26375;0.26729200000000003;0.34375;0.34375;0.345521;0.347292;0.349063;0.350833;0.352604;0.354375;0.356146;0.357917;0.359688;0.361458;0.363229;0.365;0.366771;0.368542;0.370313;0.372083;0.373854;0.375625;0.377396;1" dur="24s" begin="1.9s" repeatCount="indefinite" calcMode="discrete"/></rect></clipPath>
@@ -380,7 +379,7 @@
   </g>
   <path d="M50 78H442" stroke="rgba(255,255,255,.16)" stroke-width="1" stroke-opacity=".5"/>
   <g clip-path="url(#artClip)">
-   <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGlow)" opacity=".5" filter="url(#fGlow)"/>
+   <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGlow)" opacity=".22" filter="url(#fGlow)"/>
    <g>
      <animateTransform attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="7s" repeatCount="indefinite" calcMode="spline" keySplines=".45 0 .55 1;.45 0 .55 1"/>
     <use href="#artLines" xlink:href="#artLines" fill="url(#asciiGrad)"/>
